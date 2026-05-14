@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #030405;
+}
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+.image2-only {
+  position: relative;
+  width: 100%;
+  min-height: 260svh;
+  background: #030405;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.scroll-slices {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 62.5vw;
+}
+
+.slice {
+  position: relative;
+  min-height: 78svh;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.slice::after,
+.full-page-jump::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(3, 4, 5, 0.16), transparent 32%, rgba(3, 4, 5, 0.22)),
+    radial-gradient(circle at 72% 28%, rgba(226, 58, 34, 0.12), transparent 30%);
+  mix-blend-mode: screen;
+}
+
+.slice-top {
+  background-position: left top;
+}
+
+.slice-mid {
+  background-position: center center;
+}
+
+.slice-bottom {
+  background-position: right bottom;
+}
+
+.top-page {
+  background-image: url("./assets/image2-homepage-visual.png");
+}
+
+.top-page .slice {
+  background-image: url("./assets/image2-homepage-visual.png");
+}
+
+.about-page {
+  background-image: url("./assets/page-mocks/about.png");
+}
+
+.about-page .slice {
+  background-image: url("./assets/page-mocks/about.png");
+}
+
+.work-page {
+  background-image: url("./assets/page-mocks/work.png");
+}
+
+.work-page .slice {
+  background-image: url("./assets/page-mocks/work.png");
+}
+
+.philosophy-page {
+  background-image: url("./assets/page-mocks/philosophy.png");
+}
+
+.philosophy-page .slice {
+  background-image: url("./assets/page-mocks/philosophy.png");
+}
+
+.note-page {
+  background-image: url("./assets/page-mocks/note.png");
+}
+
+.note-page .slice {
+  background-image: url("./assets/page-mocks/note.png");
+}
+
+.contact-page {
+  background-image: url("./assets/page-mocks/contact.png");
+}
+
+.contact-page .slice {
+  background-image: url("./assets/page-mocks/contact.png");
+}
+
+.en-top-page {
+  background-image: url("./assets/page-mocks-en/top.png");
+}
+
+.en-top-page .slice {
+  background-image: url("./assets/page-mocks-en/top.png");
+}
+
+.en-about-page {
+  background-image: url("./assets/page-mocks-en/about.png");
+}
+
+.en-about-page .slice {
+  background-image: url("./assets/page-mocks-en/about.png");
+}
+
+.en-work-page {
+  background-image: url("./assets/page-mocks-en/work.png");
+}
+
+.en-work-page .slice {
+  background-image: url("./assets/page-mocks-en/work.png");
+}
+
+.en-philosophy-page {
+  background-image: url("./assets/page-mocks-en/philosophy.png");
+}
+
+.en-philosophy-page .slice {
+  background-image: url("./assets/page-mocks-en/philosophy.png");
+}
+
+.en-note-page {
+  background-image: url("./assets/page-mocks-en/note.png");
+}
+
+.en-note-page .slice {
+  background-image: url("./assets/page-mocks-en/note.png");
+}
+
+.en-contact-page {
+  background-image: url("./assets/page-mocks-en/contact.png");
+}
+
+.en-contact-page .slice {
+  background-image: url("./assets/page-mocks-en/contact.png");
+}
+
+.full-page-jump {
+  position: relative;
+  display: block;
+  min-height: 100svh;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #030405;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  scroll-snap-align: start;
+}
+
+.full-page-jump span {
+  position: absolute;
+  right: clamp(20px, 5vw, 72px);
+  bottom: clamp(20px, 5vw, 72px);
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font: 800 12px/1 Inter, system-ui, sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.about-jump {
+  background-image: url("./assets/page-mocks/about.png");
+}
+
+.work-jump {
+  background-image: url("./assets/page-mocks/work.png");
+}
+
+.philosophy-jump {
+  background-image: url("./assets/page-mocks/philosophy.png");
+}
+
+.note-jump {
+  background-image: url("./assets/page-mocks/note.png");
+}
+
+.contact-jump {
+  background-image: url("./assets/page-mocks/contact.png");
+}
+
+.en-about-jump {
+  background-image: url("./assets/page-mocks-en/about.png");
+}
+
+.en-work-jump {
+  background-image: url("./assets/page-mocks-en/work.png");
+}
+
+.en-philosophy-jump {
+  background-image: url("./assets/page-mocks-en/philosophy.png");
+}
+
+.en-note-jump {
+  background-image: url("./assets/page-mocks-en/note.png");
+}
+
+.en-contact-jump {
+  background-image: url("./assets/page-mocks-en/contact.png");
+}
+
+.note-page,
+.en-note-page {
+  min-height: calc(62.5vw + 145svh);
+}
+
+.note-page .slice-top,
+.en-note-page .slice-top {
+  min-height: 42svh;
+  background-position: center bottom;
+}
+
+.note-page .slice-mid,
+.note-page .slice-bottom,
+.en-note-page .slice-mid,
+.en-note-page .slice-bottom {
+  display: none;
+}
+
+.image2-hotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hotspot {
+  position: absolute;
+  top: 2.1vw;
+  height: 4.4vw;
+  min-height: 28px;
+  max-height: 58px;
+  pointer-events: auto;
+  opacity: 0;
+}
+
+.hotspot:focus-visible {
+  opacity: 1;
+  outline: 2px solid rgba(226, 58, 34, 0.9);
+  outline-offset: 2px;
+  background: rgba(226, 58, 34, 0.16);
+}
+
+.hotspot.menu {
+  left: 2.5%;
+  width: 10%;
+}
+
+.hotspot.about {
+  left: 36%;
+  width: 7%;
+}
+
+.hotspot.work {
+  left: 44%;
+  width: 7%;
+}
+
+.hotspot.philosophy {
+  left: 51.5%;
+  width: 12%;
+}
+
+.hotspot.note {
+  left: 64.5%;
+  width: 7%;
+}
+
+.hotspot.contact {
+  left: 72%;
+  width: 10%;
+}
+
+.hotspot.lang {
+  left: 87%;
+  width: 10%;
+}
+
+@media (max-width: 700px) {
+  .image2-only {
+    min-height: 300svh;
+  }
+
+  .scroll-slices {
+    top: 62svh;
+  }
+
+  .slice {
+    min-height: 82svh;
+    background-attachment: scroll;
+  }
+
+  .full-page-jump {
+    min-height: 70svh;
+  }
+
+  .hotspot {
+    top: 1.8vw;
+    height: 7vw;
+  }
+
+  .hotspot.menu {
+    left: 2%;
+    width: 13%;
+  }
+
+  .hotspot.about {
+    left: 33%;
+    width: 9%;
+  }
+
+  .hotspot.work {
+    left: 42.5%;
+    width: 8%;
+  }
+
+  .hotspot.philosophy {
+    left: 51%;
+    width: 14%;
+  }
+
+  .hotspot.note {
+    left: 66%;
+    width: 8%;
+  }
+
+  .hotspot.contact {
+    left: 75%;
+    width: 13%;
+  }
+
+  .hotspot.lang {
+    left: 87%;
+    width: 11%;
+  }
+}
