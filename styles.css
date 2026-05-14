@@ -254,10 +254,9 @@ html {
 
 .hotspot {
   position: absolute;
-  top: 2.1vw;
-  height: 4.4vw;
+  top: 0;
+  height: min(9vw, 110px);
   min-height: 28px;
-  max-height: 58px;
   pointer-events: auto;
   opacity: 0;
 }
@@ -270,38 +269,38 @@ html {
 }
 
 .hotspot.menu {
-  left: 2.5%;
-  width: 10%;
+  left: 0;
+  width: 18%;
 }
 
 .hotspot.about {
-  left: 36%;
-  width: 7%;
+  left: 32%;
+  width: 10%;
 }
 
 .hotspot.work {
-  left: 44%;
-  width: 7%;
+  left: 40.5%;
+  width: 9%;
 }
 
 .hotspot.philosophy {
-  left: 51.5%;
-  width: 12%;
+  left: 48.5%;
+  width: 15%;
 }
 
 .hotspot.note {
-  left: 64.5%;
-  width: 7%;
+  left: 62.5%;
+  width: 9%;
 }
 
 .hotspot.contact {
-  left: 72%;
-  width: 10%;
+  left: 70.5%;
+  width: 12%;
 }
 
 .hotspot.lang {
-  left: 87%;
-  width: 10%;
+  left: 84%;
+  width: 16%;
 }
 
 @media (max-width: 700px) {
@@ -323,42 +322,42 @@ html {
   }
 
   .hotspot {
-    top: 1.8vw;
-    height: 7vw;
+    top: 0;
+    height: 10vw;
   }
 
   .hotspot.menu {
-    left: 2%;
-    width: 13%;
+    left: 0;
+    width: 22%;
   }
 
   .hotspot.about {
-    left: 33%;
-    width: 9%;
+    left: 30%;
+    width: 12%;
   }
 
   .hotspot.work {
-    left: 42.5%;
-    width: 8%;
+    left: 40%;
+    width: 10%;
   }
 
   .hotspot.philosophy {
-    left: 51%;
-    width: 14%;
+    left: 49%;
+    width: 16%;
   }
 
   .hotspot.note {
-    left: 66%;
-    width: 8%;
+    left: 64%;
+    width: 10%;
   }
 
   .hotspot.contact {
-    left: 75%;
-    width: 13%;
+    left: 73%;
+    width: 14%;
   }
 
   .hotspot.lang {
-    left: 87%;
-    width: 11%;
+    left: 86%;
+    width: 14%;
   }
 }
