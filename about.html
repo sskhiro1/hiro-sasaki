@@ -6,24 +6,31 @@
     <title>About | Hiro Sasaki</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <main class="image2-only about-page" aria-label="image2で生成したAboutページ">
-      <nav class="image2-hotspots" aria-label="Page navigation">
-        <a class="hotspot menu" href="./index.html" aria-label="Top"></a>
-        <a class="hotspot about" href="./about.html" aria-label="About"></a>
-        <a class="hotspot work" href="./work.html" aria-label="Work"></a>
-        <a class="hotspot philosophy" href="./philosophy.html" aria-label="Philosophy"></a>
-        <a class="hotspot note" href="./note.html" aria-label="Note"></a>
-        <a class="hotspot contact" href="./contact.html" aria-label="Contact"></a>
-        <a class="hotspot lang" href="./en/about.html" aria-label="English"></a>
+  <body class="page about" data-next="./work.html">
+    <header class="site-header">
+      <a class="menu-link" href="./index.html"><span></span>Menu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a href="./philosophy.html">Philosophy</a>
+        <a href="./note.html">Note</a>
+        <a href="./contact.html">Contact</a>
       </nav>
-      <section class="scroll-slices" aria-label="縦スクロール表示">
-        <div class="slice slice-top"></div>
-        <div class="slice slice-mid"></div>
-        <div class="slice slice-bottom"></div>
-        <a class="full-page-jump work-jump" href="./work.html" aria-label="Workページへ">
-          <span>Next / Work</span>
-        </a>
+      <a class="lang-link" href="./en/about.html"><i></i>JP / EN</a>
+    </header>
+    <main>
+      <section class="page-hero split">
+        <div>
+          <p class="kicker">About</p>
+          <h1>美意識と探究心を、すべての表現に。</h1>
+          <p>格闘技を通じて培った集中力と、細部へのこだわりを軸に、映像・ビジュアル・クリエイティブの領域で表現を続けています。</p>
+        </div>
+        <div class="page-art about-art" aria-hidden="true"></div>
+      </section>
+      <section class="text-grid">
+        <article><span>01</span><h2>Origin</h2><p>身体で覚えた緊張感、準備、決断。そのすべてを表現の強度に変えています。</p></article>
+        <article><span>02</span><h2>Vision</h2><p>見た目の派手さではなく、記憶に残る空気と構造を作ることを大切にしています。</p></article>
+        <article><span>03</span><h2>Mode</h2><p>静けさ、余白、黒、赤、水面。相反する要素を組み合わせて、独自の存在感を作ります。</p></article>
       </section>
     </main>
     <script src="./script.js"></script>

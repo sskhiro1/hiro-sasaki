@@ -6,25 +6,31 @@
     <title>Work | Hiro Sasaki</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <main class="image2-only work-page" aria-label="image2で生成したWorkページ">
-      <nav class="image2-hotspots" aria-label="Page navigation">
-        <a class="hotspot menu" href="./index.html" aria-label="Top"></a>
-        <a class="hotspot about" href="./about.html" aria-label="About"></a>
-        <a class="hotspot work" href="./work.html" aria-label="Work"></a>
-        <a class="hotspot philosophy" href="./philosophy.html" aria-label="Philosophy"></a>
-        <a class="hotspot note" href="./note.html" aria-label="Note"></a>
-        <a class="hotspot contact" href="./contact.html" aria-label="Contact"></a>
-        <a class="hotspot lang" href="./en/work.html" aria-label="English"></a>
+  <body class="page work" data-next="./philosophy.html">
+    <header class="site-header">
+      <a class="menu-link" href="./index.html"><span></span>Menu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./about.html">About</a>
+        <a class="active" href="./work.html">Work</a>
+        <a href="./philosophy.html">Philosophy</a>
+        <a href="./note.html">Note</a>
+        <a href="./contact.html">Contact</a>
       </nav>
-      <section class="scroll-slices" aria-label="縦スクロール表示">
-        <div class="slice slice-top"></div>
-        <div class="slice slice-mid"></div>
-        <div class="slice slice-bottom"></div>
-        <a class="full-page-jump philosophy-jump" href="./philosophy.html" aria-label="Philosophyページへ">
-          <span>Next / Philosophy</span>
-        </a>
+      <a class="lang-link" href="./en/work.html"><i></i>JP / EN</a>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="kicker">Work</p>
+        <h1>作品とプロジェクト</h1>
+        <p>課題の背景を深く理解し、最適なクリエイティブを設計します。</p>
       </section>
+      <section class="work-grid">
+        <article><span>01</span><h2>Visual Direction</h2><p>ブランドビジュアルの再構築。世界観を統一した表現へ。</p><div class="thumb ink"></div><a href="./contact.html">View case study</a></article>
+        <article><span>02</span><h2>AI Creative</h2><p>AIを活用したクリエイティブ開発。制作速度と表現力を両立。</p><div class="thumb rain"></div><a href="./contact.html">View case study</a></article>
+        <article><span>03</span><h2>Digital Product</h2><p>デジタルプロダクトの設計・開発。体験価値を最大化。</p><div class="thumb product"></div><a href="./contact.html">View case study</a></article>
+        <article><span>04</span><h2>Motion</h2><p>映像・モーショングラフィックス。静と動の緊張感を設計。</p><div class="thumb red"></div><a href="./contact.html">View case study</a></article>
+      </section>
+      <section class="statement"><i></i><h2>課題の背景を深く理解し、最適なクリエイティブを設計します。</h2><a href="./contact.html">Project inquiry</a></section>
     </main>
     <script src="./script.js"></script>
   </body>

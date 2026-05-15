@@ -6,25 +6,25 @@
     <title>Note | Hiro Sasaki</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <main class="image2-only note-page" aria-label="image2で生成したNoteページ">
-      <nav class="image2-hotspots" aria-label="Page navigation">
-        <a class="hotspot menu" href="./index.html" aria-label="Top"></a>
-        <a class="hotspot about" href="./about.html" aria-label="About"></a>
-        <a class="hotspot work" href="./work.html" aria-label="Work"></a>
-        <a class="hotspot philosophy" href="./philosophy.html" aria-label="Philosophy"></a>
-        <a class="hotspot note" href="./note.html" aria-label="Note"></a>
-        <a class="hotspot contact" href="./contact.html" aria-label="Contact"></a>
-        <a class="hotspot lang" href="./en/note.html" aria-label="English"></a>
+  <body class="page note" data-next="./contact.html">
+    <header class="site-header">
+      <a class="menu-link" href="./index.html"><span></span>Menu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./about.html">About</a><a href="./work.html">Work</a><a href="./philosophy.html">Philosophy</a><a class="active" href="./note.html">Note</a><a href="./contact.html">Contact</a>
       </nav>
-      <section class="scroll-slices" aria-label="縦スクロール表示">
-        <div class="slice slice-top"></div>
-        <div class="slice slice-mid"></div>
-        <div class="slice slice-bottom"></div>
-        <a class="full-page-jump contact-jump" href="./contact.html" aria-label="Contactページへ">
-          <span>Next / Contact</span>
-        </a>
+      <a class="lang-link" href="./en/note.html"><i></i>JP / EN</a>
+    </header>
+    <main>
+      <section class="note-layout">
+        <aside><p class="kicker">Note</p><h1>思考の記録</h1><p>日々の仕事や学び、挑戦の中で得た気づきや思考を綴っています。</p></aside>
+        <div class="article-list">
+          <article><div class="note-thumb a"></div><span>01 / 2025.05.24 / Thoughts</span><h2>AI時代のクリエイティブディレクションとは</h2><p>新しい価値のつくり方について。</p><a href="./contact.html">→</a></article>
+          <article><div class="note-thumb b"></div><span>02 / 2025.05.10 / Workflow</span><h2>複雑なプロジェクトを、シンプルに進める方法</h2><p>意思決定のプロセスを整えるためのフレームワーク。</p><a href="./contact.html">→</a></article>
+          <article><div class="note-thumb c"></div><span>03 / 2025.04.26 / Branding</span><h2>ブランドの本質を言語化するということ</h2><p>未来の指針をつくるために。</p><a href="./contact.html">→</a></article>
+          <article><div class="note-thumb d"></div><span>04 / 2025.04.12 / Life</span><h2>集中力を取り戻す、静かな習慣</h2><p>日々のリズムを取り戻すために。</p><a href="./contact.html">→</a></article>
+        </div>
       </section>
+      <form class="subscribe-form"><label>New noteを受け取る</label><input type="email" placeholder="メールアドレスを入力" /><button type="submit">Subscribe →</button></form>
     </main>
     <script src="./script.js"></script>
   </body>
